@@ -3,7 +3,7 @@ document.getElementById("btn-todos").addEventListener("click", async () => {
 
     document.getElementById("result").innerHTML = "";
 
-    const response = await fetch("http://localhost:3000/api/todos");
+    const response = await fetch("https://app.devm.in/api/todos");
     const data = await response.json();
     console.log(data);
 
@@ -19,7 +19,7 @@ document.getElementById("btn-bikes").addEventListener("click", async () => {
   try {
     document.getElementById("result").innerHTML = "";
 
-    const response = await fetch("http://localhost:3000/api/bikes");
+    const response = await fetch("https://app.devm.in/api/bikes");
     const data = await response.json();
     console.log(data);
 
